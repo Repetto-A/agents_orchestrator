@@ -8,6 +8,12 @@ export default defineConfig(({ mode }) => ({
   server: {
     host: "::",
     port: 8080,
+    allowedHosts: [".up.railway.app"],
+  },
+  preview: {
+    host: "::",
+    port: 8080,
+    allowedHosts: [".up.railway.app","frontend-production-49ce.up.railway.app"],
   },
   plugins: [react(), mode === "development" && componentTagger()].filter(Boolean),
   resolve: {
