@@ -1,6 +1,6 @@
 import { StoreSelector } from "./StoreSelector";
 import { useStore } from "@/context/StoreContext";
-import { LayoutDashboard, Bell } from "lucide-react";
+import { Bell } from "lucide-react";
 import { Button } from "@/components/ui/button";
 import { Badge } from "@/components/ui/badge";
 
@@ -12,8 +12,12 @@ export function DashboardHeader() {
       <div className="flex h-16 items-center justify-between px-6">
         <div className="flex items-center gap-4">
           <div className="flex items-center gap-2">
-            <div className="p-2 rounded-lg bg-primary/10">
-              <LayoutDashboard className="h-5 w-5 text-primary" />
+            <div className="p-1 rounded-lg bg-primary/10">
+              <img
+                src="/favicon.png"
+                alt="CloserLoop"
+                className="h-7 w-7 rounded-md object-cover"
+              />
             </div>
             <div>
               <h1 className="text-lg font-semibold">CloserLoop Seller Console</h1>
