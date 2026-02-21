@@ -16,7 +16,7 @@ export function DashboardHeader() {
               <LayoutDashboard className="h-5 w-5 text-primary" />
             </div>
             <div>
-              <h1 className="text-lg font-semibold">Inventory Dashboard</h1>
+              <h1 className="text-lg font-semibold">CloserLoop Seller Console</h1>
               {currentStore && (
                 <p className="text-xs text-muted-foreground">
                   {currentStore.name} • {currentStore.location}
